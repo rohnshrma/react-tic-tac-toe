@@ -1,5 +1,4 @@
 import React from "react"; // Importing React for JSX syntax
-import "./Square.css"; // Importing the styling for individual squares
 
 // Square component to render each individual square
 const Square = ({ value, onClick }) => {

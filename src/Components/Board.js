@@ -1,6 +1,5 @@
 import React from "react"; // Importing React library to use JSX
 import Square from "./Square"; // Importing the Square component to render individual squares
-import "./Board.css"; // Importing styling for the Board component
 
 // Board component that takes in squares (state of each square) and the onClick handler as props
 const Board = ({ squares, onClick }) => {
