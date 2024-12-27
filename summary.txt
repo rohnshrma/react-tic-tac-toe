@@ -1,0 +1,11 @@
+Summary of Logic in App.js
+	•	Game State:
+	•	The app maintains two main pieces of state: squares (an array of 9 items representing the board) and isXNext (a boolean that determines whether it’s player X’s turn or player O’s turn).
+	•	Calculate Winner:
+	•	The calculateWinner function checks if there is a winning combination of X’s or O’s after each move, by checking predefined “winning lines” on the board (rows, columns, diagonals).
+	•	Handling Clicks:
+	•	The handleClick function manages user clicks. It updates the board with “X” or “O”, checks for a winner, and switches turns between X and O.
+	•	Status Message:
+	•	Based on the state, it displays a status message indicating whether there is a winner, whose turn it is next, or if the game is a draw.
+	•	Reset Game:
+	•	The resetGame function clears the board and sets the current player back to X.

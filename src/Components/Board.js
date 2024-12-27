@@ -1,21 +1,27 @@
-import React from "react";
-import Square from "./Square";
+import React from "react"; // Importing React library to use JSX
+import Square from "./Square"; // Importing the Square component to render individual squares
+import "./Board.css"; // Importing styling for the Board component
 
+// Board component that takes in squares (state of each square) and the onClick handler as props
 const Board = ({ squares, onClick }) => {
-  console.log(squares);
   return (
     <div className="board">
-      {squares.map((value, index) => (
-        <Square
-          key={index}
-          value={value}
-          onClick={() => {
-            onClick(index);
-          }}
-        />
-      ))}
+      {" "}
+      {/* Board container */}
+      {squares.map(
+        (
+          value,
+          index // Iterate over the squares array and render a Square for each index
+        ) => (
+          <Square
+            key={index} // Using the index as a key to uniquely identify each square
+            value={value} // Passing the value of each square (X, O, or null)
+            onClick={() => onClick(index)} // Passing the onClick handler for each square with the index
+          />
+        )
+      )}
     </div>
   );
 };
 
-export default Board;
+export default Board; // Exporting the Board component for use in other files
