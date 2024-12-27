@@ -72,11 +72,10 @@ const App = () => {
   return (
     <div className="app">
       <h1>Tic Tac Toe</h1> {/* Title of the game */}
-      <Board squares={squares} onClick={handleClick} />{" "}
+      <Board squares={squares} onClick={handleClick} />
       {/* Render the Board component with props */}
       <p className="status">{status}</p> {/* Display current status */}
       <button className="reset-button" onClick={resetGame}>
-        {" "}
         {/* Reset button to restart the game */}
         Restart Game
       </button>
