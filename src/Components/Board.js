@@ -5,7 +5,6 @@ import Square from "./Square"; // Importing the Square component to render indiv
 const Board = ({ squares, onClick }) => {
   return (
     <div className="board">
-      {" "}
       {/* Board container */}
       {squares.map(
         (
